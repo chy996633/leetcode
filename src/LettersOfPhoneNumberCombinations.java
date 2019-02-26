@@ -7,6 +7,21 @@ import java.util.Map;
 
 public class LettersOfPhoneNumberCombinations {
 
+    List<String> result = new ArrayList<>();
+
+    HashMap<String, String> numToLetterMap = new HashMap<String, String>(){
+        {
+            put("2", "abc");
+            put("3", "def");
+            put("4", "ghi");
+            put("5", "jkl");
+            put("6", "mno");
+            put("7", "pqrs");
+            put("8", "tuv");
+            put("9", "wxyz");
+        }
+    };
+
     public List<String> solutions(String digits) {
         if (digits.equals("")) return new ArrayList<>();
 
@@ -41,5 +56,26 @@ public class LettersOfPhoneNumberCombinations {
         }
         return result;
     }
+
+    public List<String> solutionTwo(String digits) {
+        backtrace("", digits);
+        return result;
+    }
+
+    private void backtrace(String combination, String remainDigits) {
+        if (remainDigits == null || remainDigits.equals("")) {
+            result.add(combination);
+        } else {
+            String number = remainDigits.substring(0, 1);
+            String letters = numToLetterMap.get(number);
+            for (String letter : letters.split("")) {
+                backtrace(combination + letter, remainDigits.substring(1));
+            }
+        }
+
+    }
+
+
+
 
 }
