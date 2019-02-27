@@ -1,5 +1,6 @@
 package util;
 
+import java.util.Arrays;
 import java.util.Objects;
 
 public class ListNode {
@@ -11,6 +12,17 @@ public class ListNode {
         val = x;
     }
 
+    public static ListNode createLinkNodes(Integer... args) {
+        if (args == null) return null;
+
+        ListNode head = new ListNode(0), dummy = head;
+        for (Integer i : args) {
+            head.next = new ListNode(i);
+            head = head.next;
+        }
+        return dummy.next;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) {
@@ -20,12 +32,21 @@ public class ListNode {
             return false;
         }
         ListNode listNode = (ListNode) o;
-        return val == listNode.val;
+        return val == listNode.val &&
+                Objects.equals(next, listNode.next);
     }
 
     @Override
     public int hashCode() {
 
-        return Objects.hash(val);
+        return Objects.hash(val, next);
+    }
+
+    @Override
+    public String toString() {
+        return "ListNode{" +
+                "val=" + val +
+                ", next=" + next +
+                '}';
     }
 }
