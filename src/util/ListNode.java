@@ -3,7 +3,7 @@ package util;
 import java.util.Arrays;
 import java.util.Objects;
 
-public class ListNode {
+public class ListNode implements Comparable {
 
     public int val;
     public ListNode next;
@@ -48,5 +48,13 @@ public class ListNode {
                 "val=" + val +
                 ", next=" + next +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        if (o instanceof ListNode) {
+            return Integer.compare(val, ((ListNode) o).val);
+        }
+        return this.compareTo(o);
     }
 }
