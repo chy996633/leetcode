@@ -5,8 +5,9 @@ import java.util.stream.IntStream;
 
 /**
  * description : https://leetcode.com/problems/combination-sum/
- * contains unique/duplicates solutions
  * 题目描述 : https://leetcode-cn.com/problems/combination-sum/
+ *
+ * contains unique/duplicates solutions
  * 包含 唯一/重复 两种解题思路
  */
 public class CombinationSum {

@@ -1,12 +1,7 @@
 /**
- * @author <a herf="chenhy@itek-china.com">陈海越</a>
- * @version 1.0
- * @since 新标准版5.0
+ * description : https://leetcode.com/problems/multiply-strings/
+ * 题目描述 : https://leetcode-cn.com/problems/multiply-strings/
  *
- * <pre>
- * 历史：
- *      建立: 2019/9/6 陈海越
- *        </pre>
  */
 public class MultipleStrings {
 
