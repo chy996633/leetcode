@@ -2,14 +2,8 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * @author <a herf="chenhy@itek-china.com">陈海越</a>
- * @version 1.0
- * @since 新标准版5.0
- *
- * <pre>
- * 历史：
- *      建立: 2019/9/18 陈海越
- *        </pre>
+ * description : https://leetcode.com/problems/valid-sudoku/
+ * 题目描述 : https://leetcode-cn.com/problems/valid-sudoku/
  */
 public class ValidSudoku {
 
