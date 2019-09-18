@@ -30,6 +30,19 @@ public class CombinationSumTest {
                 add(Arrays.asList(3,5));
             }
         }, result);
+
+        result = cs.combine(new int[]{2,3,4,5}, 10);
+        assertEquals(new ArrayList<List<Integer>>() {
+            {
+                add(Arrays.asList(2,2,2,2,2));
+                add(Arrays.asList(2,2,2,4));
+                add(Arrays.asList(2,2,3,3));
+                add(Arrays.asList(2,3,5));
+                add(Arrays.asList(2,4,4));
+                add(Arrays.asList(3,3,4));
+                add(Arrays.asList(5,5));
+            }
+        }, result);
     }
 
 
@@ -43,7 +56,6 @@ public class CombinationSumTest {
                 add(Arrays.asList(1, 2, 5));
                 add(Arrays.asList(1, 7));
                 add(Arrays.asList(2, 6));
-
             }
         }, result);
     }

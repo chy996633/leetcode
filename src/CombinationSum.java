@@ -4,14 +4,10 @@ import java.util.List;
 import java.util.stream.IntStream;
 
 /**
- * @author <a herf="chenhy@itek-china.com">陈海越</a>
- * @version 1.0
- * @since 新标准版5.0
- *
- * <pre>
- * 历史：
- *      建立: 2019/8/23 陈海越
- *        </pre>
+ * description : https://leetcode.com/problems/combination-sum/
+ * contains unique/duplicates solutions
+ * 题目描述 : https://leetcode-cn.com/problems/combination-sum/
+ * 包含 唯一/重复 两种解题思路
  */
 public class CombinationSum {
 
